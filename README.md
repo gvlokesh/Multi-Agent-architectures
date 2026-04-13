@@ -140,7 +140,7 @@ The `merge_dicts` reducer merges new dictionary entries into the existing state,
 2. Create a `.env` file with your `OPENAI_API_KEY`
 3. Install dependencies:
    ```bash
-   pip install langchain-openai langchain_tavily langchain-community langchain_text_splitters python-dotenv
+   pip install langchain-openai  langchain-community  python-dotenv
    ```
 4. Open and run `agents_architecture.ipynb`
 
