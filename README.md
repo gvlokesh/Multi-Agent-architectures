@@ -14,7 +14,6 @@ This project demonstrates how to build multi-agent systems that coordinate and c
 
 ```bash
 pip install langchain-openai
-pip install langchain_tavily
 pip install langchain-community
 pip install langchain_text_splitters
 ```
@@ -60,21 +59,6 @@ Two independent school sub-graphs are built (School A and School B), each with:
 - Looping pattern: Principal → Department → Principal → ... → END
 - Each school uses different score datasets
 
-**School A scores:**
-| Subject | Scores | Average |
-|---------|--------|---------|
-| Math    | 80, 90, 100 | 90.0 |
-| Science | 70, 75, 80  | 75.0 |
-| Sports  | 95, 100, 90 | 95.0 |
-| **School Average** | | **86.67** |
-
-**School B scores:**
-| Subject | Scores | Average |
-|---------|--------|---------|
-| Math    | 80, 90, 70 | 80.0 |
-| Science | 70, 60, 80 | 70.0 |
-| Sports  | 95, 79, 90 | 88.0 |
-| **School Average** | | **79.33** |
 
 ---
 
@@ -93,7 +77,7 @@ Composes the two school sub-graphs as nodes inside a higher-level Director graph
 - Parallel fan-out from START to both school nodes
 - Fan-in: both schools converge on the Director
 
-**Result:** 🏆 School_A wins with average 86.67
+
 
 ---
 
