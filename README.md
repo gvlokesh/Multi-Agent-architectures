@@ -15,7 +15,6 @@ This project demonstrates how to build multi-agent systems that coordinate and c
 ```bash
 pip install langchain-openai
 pip install langchain-community
-pip install langchain_text_splitters
 ```
 
 **Required environment variables:**
@@ -145,17 +144,6 @@ The `merge_dicts` reducer merges new dictionary entries into the existing state,
    ```
 4. Open and run `agents_architecture.ipynb`
 
----
-
-## 📂 Project Structure
-
-```
-Multi-Agent-architectures/
-├── agents_architecture.ipynb   # Main notebook with all 5 patterns
-└── README.md                   # This file
-```
-
----
 
 ## 📚 Key Takeaways
 
@@ -168,17 +156,3 @@ Multi-Agent-architectures/
 | Super-Hierarchical (two-way, Command) | `Command` API | Sequential sub-graphs | ⭐⭐⭐ | Clean iterative orchestration |
 
 ---
-
-## 🛠️ Technologies
-
-- **LangChain** — LLM orchestration framework
-- **LangGraph** — State machine graph framework for agent workflows
-- **OpenAI GPT-4o-mini** — Language model for reasoning tasks
-- **FAISS** — Vector store (imported, available for RAG extensions)
-- **Tavily** — Search tool (imported, available for tool-augmented agents)
-
----
-
-## 📄 License
-
-This project is for educational purposes. See the repository for license details.
